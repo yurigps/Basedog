@@ -2,7 +2,7 @@
        PROGRAM-ID. prog1.
        AUTHOR. YuriGPS.
       *    Programa para estudo da estrutura básica do Cobol
-      *    Objetivo: Exibir um "hello world" e um número separado com vírgula.
+      *    Objetivo: Exibir ums mensagem de texto e um número separado com vírgula.
        ENVIRONMENT DIVISION.
 
        CONFIGURATION SECTION.
