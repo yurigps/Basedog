@@ -2,7 +2,7 @@
        PROGRAM-ID. prog7.
        AUTHOR. YuriGPS.
       *    Programa para estudo do comando IF-ELSE.
-      *    Objetivo: Receber um número e dizer e exibir uma mensagem
+      *    Objetivo: Receber um número e exibir uma mensagem condicional
       
 
        ENVIRONMENT DIVISION.
