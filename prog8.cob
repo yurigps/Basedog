@@ -8,33 +8,33 @@
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
            
-           SELECT ARQUIVO-CLIENTE
+           SELECT OPTIONAL ARQUIVO-CLIENTE
                ASSIGN TO "clientes.txt"
-               ORGANIZATION IS LINE SEQUENTIAL.
+               ORGANIZATION IS LINE SEQUENTIAL
+               FILE STATUS IS WS-STATUS.
 
        DATA DIVISION. *> onde o layout do registro é definido
        FILE SECTION.
        FD ARQUIVO-CLIENTE.
-
        01 REGISTRO-CLIENTE.
            05 NOME  PIC X(20).
            05 IDADE PIC 9(3).
 
        WORKING-STORAGE SECTION.
-       01 OPCAO PIC X VALUE "S".
+       01 OPCAO        PIC X VALUE "S".
+       01 WS-STATUS    PIC XX.
            
 
        PROCEDURE DIVISION. *> onde se abre, lê, grava e fecha o arquivo.
 
            OPEN EXTEND ARQUIVO-CLIENTE.
 
-
            PERFORM ADICIONA-REGISTROS 
                UNTIL OPCAO = "N" OR OPCAO = "n".
 
 
+
            CLOSE ARQUIVO-CLIENTE.
-               
 
            STOP RUN.
 
