@@ -1,9 +1,8 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. Prog8.
        AUTHOR. YuriGPS.
-      *    Programa para estudo de manipulação de arquivo.
-      *    Objetivo: Usar arquivo para criar um registro de clientes.
-      
+      *Programa para estudo de manipulação de arquivo.
+      *Objetivo:Usar arquivo já criado para um registro de clientes.      
 
        ENVIRONMENT DIVISION. *> onde o arquivo é definido externamente
        INPUT-OUTPUT SECTION.
