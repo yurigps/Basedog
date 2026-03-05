@@ -45,7 +45,13 @@
            AT END 
                MOVE "S" TO EOF.
            IF EOF = "N"
-               PERFORM EXIBA-CAMPOS.
+               PERFORM EXIBA-CAMPOS
+               ELSE
+               DISPLAY "***************"
+               DISPLAY "FIM DE ARQUIVO"
+               DISPLAY "***************"
+           END-IF.
+               
            
        EXIBA-CAMPOS.
 
