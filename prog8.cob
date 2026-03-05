@@ -19,6 +19,7 @@
        01 REGISTRO-CLIENTE.
            05 NOME  PIC X(20).
            05 IDADE PIC 9(3).
+           05 EMAIL PIC X(20).
 
        WORKING-STORAGE SECTION.
        01 OPCAO        PIC X VALUE "S".
@@ -49,6 +50,9 @@
 
            DISPLAY "Informe a idade do cliente: "
            ACCEPT IDADE.
+
+           DISPLAY "Informe o email do cliente: "
+           ACCEPT EMAIL.
        
            WRITE REGISTRO-CLIENTE.
 
