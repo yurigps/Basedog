@@ -10,8 +10,7 @@
            
            SELECT OPTIONAL ARQUIVO-CLIENTE
                ASSIGN TO "clientes.txt"
-               ORGANIZATION IS LINE SEQUENTIAL
-               FILE STATUS IS WS-STATUS.
+               ORGANIZATION IS LINE SEQUENTIAL.
 
        DATA DIVISION. *> onde o layout do registro é definido
        FILE SECTION.
@@ -23,7 +22,6 @@
 
        WORKING-STORAGE SECTION.
        01 OPCAO        PIC X VALUE "S".
-       01 WS-STATUS    PIC XX.
            
 
        PROCEDURE DIVISION. *> onde se abre, lê, grava e fecha o arquivo.
