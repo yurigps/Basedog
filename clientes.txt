@@ -1,6 +1,3 @@
-Yuri                037
-Ray                 037
-Pedro               039
-Joao                078
-Salomon             067
-Marcela             017
+Yuri                037teste@gmail.com
+Jony                078jony@email.com
+Jana                023jjn@hotmail.com
