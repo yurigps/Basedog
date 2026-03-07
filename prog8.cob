@@ -31,8 +31,6 @@
            PERFORM ADICIONA-REGISTROS 
                UNTIL OPCAO = "N" OR OPCAO = "n".
 
-
-
            CLOSE ARQUIVO-CLIENTE.
 
            STOP RUN.
