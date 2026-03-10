@@ -2,7 +2,7 @@
        PROGRAM-ID. Prog11.
        AUTHOR. YuriGPS.
       *Programa para estudo de manipulação de arquivos.
-      *Objetivo:Inserir dados num arquivo indexado.
+      *Objetivo:INSERIR DADOS num arquivo indexado.
 
        ENVIRONMENT DIVISION. 
        INPUT-OUTPUT SECTION.
