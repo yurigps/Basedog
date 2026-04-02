@@ -17,7 +17,7 @@
            COPY "FDCLIENTES.cob".
 
        WORKING-STORAGE SECTION.
-       01  EOF          PIC X VALUE "N".
+       77  EOF          PIC X VALUE "N".
            
 
        PROCEDURE DIVISION.
