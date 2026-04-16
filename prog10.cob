@@ -2,7 +2,7 @@
        PROGRAM-ID. Prog10.
        AUTHOR. YuriGPS.
       *Programa para estudo de manipulação de arquivos.
-      *Objetivo:Programa para CRIAR num arquivo indexado.
+      *Objetivo:Programa para CRIAR um arquivo indexado.
 
        ENVIRONMENT DIVISION. 
        INPUT-OUTPUT SECTION.
@@ -11,7 +11,7 @@
            SELECT OPTIONAL ARQUIVO-CLIENTE
                ASSIGN TO "clientes.index.dat"
                ORGANIZATION IS INDEXED
-               RECORD KEY IS CODIGO
+               RECORD KEY IS CHAVE
                FILE STATUS IS WS-STATUS
                ACCESS MODE IS DYNAMIC.
        
@@ -24,7 +24,7 @@
            05 NOME   PIC X(20).
            05 IDADE  PIC 9(3).
            05 EMAIL  PIC X(20).
-           05 CODIGO PIC X(2).
+           05 CHAVE  PIC 9(2).
 
        WORKING-STORAGE SECTION.
 
