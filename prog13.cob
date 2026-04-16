@@ -18,7 +18,7 @@
 
        WORKING-STORAGE SECTION.
        77  EOF          PIC X VALUE "N".
-           
+                
 
        PROCEDURE DIVISION.
 
