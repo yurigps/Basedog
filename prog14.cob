@@ -44,7 +44,7 @@
            MOVE SPACES TO REGISTRO-CLIENTE
            MOVE ZEROS TO CHAVE
 
-           DISPLAY "---digite 0(ZERO) para cancelar.---"
+           DISPLAY "---digite 0(ZERO) para fechar o programa.---"
            DISPLAY "INFORME O CÓDIGO DO CLIENTE: ".
            ACCEPT CHAVE-CLIENTE-ALTERAR.
            MOVE CHAVE-CLIENTE-ALTERAR TO CHAVE.
@@ -83,11 +83,13 @@
            DISPLAY "---digite 0(ZERO) para cancelar.---".
            ACCEPT QUAL-CAMPO.
            
-           IF QUAL-CAMPO > 0 AND QUAL-CAMPO < 4 
+
+
+           IF QUAL-CAMPO NOT EQUAL 0 AND QUAL-CAMPO < 4 
 
                PERFORM MUDA-E-GRAVA-CAMPO
            ELSE 
-               IF QUAL-CAMPO > 3 
+               IF QUAL-CAMPO > 0 OR > 3 
                    DISPLAY "CAMPO INVÁLIDO"
                END-IF
            END-IF.
